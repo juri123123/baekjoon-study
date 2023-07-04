@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    
+        String line = br.readLine();
+        StringTokenizer st = new StringTokenizer(line," ");
+
+        int hour = Integer.parseInt(st.nextToken());
+        int minute = Integer.parseInt(st.nextToken());
+
+        int time = Integer.parseInt(br.readLine());
+
+        int newM = minute + time;
+        int newH = newM / 60 + hour;
+        int m = newM % 60;
+
+        if(newM < 60) {
+            System.out.println(hour + " " + newM);
+        } else if(newH < 24){
+            System.out.println(newH + " " + m);
+        } else {
+            System.out.println((newH-24) + " " + m);
+        }
+        
+    }
+}
