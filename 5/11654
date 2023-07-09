@@ -1,0 +1,19 @@
+        import java.io.*;
+        import java.util.*;
+
+        public class Main{
+            public static void main(String[] args) throws IOException {
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
+                BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+                String input = br.readLine();
+                char a = input.charAt(0);
+                System.out.println((int) a);
+
+                //아스키 코드 값을 얻으려면
+
+                br.close();
+                bw.flush();
+
+            }
+        }
