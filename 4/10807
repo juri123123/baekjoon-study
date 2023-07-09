@@ -19,8 +19,8 @@ public class Main{
             }
         }
 
-        // System.out.println(cnt);
-        bw.write(cnt);
+        System.out.println(cnt);
+        // bw.write(cnt);
 
         br.close();
         bw.flush();
