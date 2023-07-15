@@ -6,19 +6,15 @@
         //         BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
         //         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        //         int[] chess = {1,1,2,2,2,8};
+        //         String s = "         ,r'\"7+\n" + 
+        //                     "r`-_   ,'  ,/\n" + 
+        //                     " \\. \". L_r'\n" +
+        //                     "   `~\\/\n" + 
+        //                     "      |\n" +
+        //                     "      |";
 
-        //         String nums = br.readLine();
-        //         StringTokenizer st = new StringTokenizer(nums);
-
-        //         for(int i = 0; i < 6; i++) {
-                    
-        //             int result = chess[i] - Integer.parseInt(st.nextToken());
-        //             bw.write(result + " ");
-        //         }
-                
-                
-                
+            
+        //         System.out.print(s);
 
         //         br.close();
         //         bw.flush();
