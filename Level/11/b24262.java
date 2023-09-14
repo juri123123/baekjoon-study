@@ -7,9 +7,11 @@ public class b24262{
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         int n = Integer.parseInt(br.readLine());
+        
+        int result = n*(n-1)/2;
 
-        System.out.println(1);
-        System.out.println(0);
+        System.out.println(result);
+        System.out.println(2);
         br.close();
         bw.flush();
 
