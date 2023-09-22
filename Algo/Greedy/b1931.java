@@ -17,7 +17,7 @@ public class b1931 {
         @Override
         public int compareTo(Meeting o) {
             if(this.end > o.end) return 1;
-            else if(this.end < o.end) return 0;
+            else if(this.end < o.end) return -1;
             else return this.start - o.start;
         }
 
