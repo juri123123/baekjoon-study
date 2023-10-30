@@ -19,9 +19,11 @@ public class b1018{
                 board[i][j] = inputB.charAt(j);
             }
         }
+
         int count = 0;
         int flag = 0;
         int min = Integer.MAX_VALUE;
+        int result = 0;
 
         for(int i=0; i<=n-8; i++) {
             for(int j=0; j<=m-8; j++) {
@@ -73,15 +75,16 @@ public class b1018{
                             
                         }
                     }
-                    System.out.println(i + " " + j + " " + flag);
+                    //System.out.println(i + " " + j + " " + flag);
+                    flag = Math.min(flag, 64-flag);
                     if(min > flag) {
                         min = flag;
                         System.out.println(i + " " + j+ " " + flag);
                     }
+                    
                 }
             }
         }
-
         bw.write(min + "\n");
         br.close();
         bw.flush();
