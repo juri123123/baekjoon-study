@@ -48,10 +48,10 @@ public class b1018{
                             
                         }
                     }
-                    System.out.println(i + " " + j + " " + flag);
+                    //System.out.println(i + " " + j + " " + flag);
                     if(min > flag) {
                         min = flag;
-                        System.out.println(i + " " + j + " " + flag);
+                        //System.out.println(i + " " + j + " " + flag);
                     }
 
                 } else {
@@ -79,13 +79,14 @@ public class b1018{
                     flag = Math.min(flag, 64-flag);
                     if(min > flag) {
                         min = flag;
-                        System.out.println(i + " " + j+ " " + flag);
+                        //System.out.println(i + " " + j+ " " + flag);
                     }
                     
                 }
             }
         }
-        bw.write(min + "\n");
+        
+        bw.write(Math.min(min, 64-min) + "\n");
         br.close();
         bw.flush();
 
