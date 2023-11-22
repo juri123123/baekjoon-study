@@ -16,11 +16,12 @@ public class b27433{
 
     }
 
-    static int factorial(int x) {
+    static long factorial(int x) {
         
         if (x==0) {
             return 1;
-        } else if (x==1) {
+        } 
+        if (x==1) {
             return 1;
         }
 
