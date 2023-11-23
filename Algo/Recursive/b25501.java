@@ -29,7 +29,7 @@ public class b25501{
         if(l >= r) return 1;
         else if(s.charAt(l) != s.charAt(r)) {
             return 0;
-        } else {
+        } else {    
             
             return recursion(s, l+1, r-1);
         }
